@@ -1,0 +1,63 @@
+$body-bg:    #ebebeb;
+$body-color: #080808; //text color
+$primary:    #d78c87;  // your brand pink
+$secondary:  #3a3f58;  // dark gray/blue
+$success:    #5a7d7c;
+$warning:    #c8a97e;
+$danger:     #af4d4d;
+$info:       #4c6ef5;
+
+.card {
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    border-color: $primary; // border becomes your theme color
+    transform: translateY(-5px);
+  }
+
+  .card-title {
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $primary; // title changes to theme color
+    }
+  }
+}
+.btn {
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &:active {
+    opacity: 0.75;
+  }
+}
+.nav-link {
+  position: relative;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
