@@ -10,12 +10,22 @@ $info:       #4c6ef5;
 [data-bs-theme="light"] {
   --bs-body-bg: #ebebeb;  // your gray background
   --section-card-bg: #ffffff;
+  #footer a{
+  color: #d78c87;
+  font-weight: 650;
+  text-decoration: none;
+}
 }
 
 [data-bs-theme="dark"] {
   --bs-body-bg: #212529;  // Bootstrap dark gray
   --section-card-bg: #2b3034;
   --bs-body-color: #ffffff;  // very light gray
+    #footer a {
+    color: #d78c87;
+    font-weight: 650;
+    text-decoration: none;
+  }
 }
 /* Light mode */
 /* Make button text always inherit theme color */
@@ -24,12 +34,13 @@ $info:       #4c6ef5;
   background-color: transparent;
 }
 
+
 /* On hover: no color flip, just bold */
 #theme-toggle:hover {
   color: black;
   background-color: transparent;
   opacity: .5;
-    transition: all 0.3s ease;
+  transition: all 0.3s ease;
 
 }
 
@@ -62,6 +73,7 @@ $info:       #4c6ef5;
   transition: opacity 0.3s ease;
   font-weight: 700 !important;
   color: white !important;
+  padding: 12px 24px !important;
   &:hover {
     opacity: 0.85;
   }
@@ -70,7 +82,8 @@ $info:       #4c6ef5;
     opacity: 0.75;
   }
 }
-.nav-link {
+.nav-link,
+#footer a {
   position: relative;
   transition: opacity 0.2s ease;
 

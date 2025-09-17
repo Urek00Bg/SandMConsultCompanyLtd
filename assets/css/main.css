@@ -4,11 +4,22 @@
   --bs-body-bg: #ebebeb;
   --section-card-bg: #ffffff;
 }
+:root #footer a,
+[data-bs-theme=light] #footer a {
+  color: #d78c87;
+  font-weight: 650;
+  text-decoration: none;
+}
 
 [data-bs-theme=dark] {
   --bs-body-bg: #212529;
   --section-card-bg: #2b3034;
   --bs-body-color: #ffffff;
+}
+[data-bs-theme=dark] #footer a {
+  color: #d78c87;
+  font-weight: 650;
+  text-decoration: none;
 }
 
 /* Light mode */
@@ -54,6 +65,7 @@
   transition: opacity 0.3s ease;
   font-weight: 700 !important;
   color: white !important;
+  padding: 12px 24px !important;
 }
 .btn:hover {
   opacity: 0.85;
@@ -62,14 +74,17 @@
   opacity: 0.75;
 }
 
-.nav-link {
+.nav-link,
+#footer a {
   position: relative;
   transition: opacity 0.2s ease;
 }
-.nav-link:hover {
+.nav-link:hover,
+#footer a:hover {
   opacity: 0.8;
 }
-.nav-link::after {
+.nav-link::after,
+#footer a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -79,7 +94,8 @@
   background-color: currentColor;
   transition: width 0.3s ease;
 }
-.nav-link:hover::after {
+.nav-link:hover::after,
+#footer a:hover::after {
   width: 100%;
 }
 
