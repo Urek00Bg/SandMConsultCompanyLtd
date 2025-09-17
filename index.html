@@ -29,256 +29,202 @@
 
 
   <body>
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <img src="./assets/images/logo.webp" alt="Bootstrap" width="100" height="94">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-2 ">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">За нас</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#stats">Защо S&M</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#div_emply">Цени</a>
-            </li>
-          </ul>
-
+    <main>
+      <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <img src="./assets/images/logo.webp" alt="Bootstrap" width="100" height="94">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
           
-          <span class="navbar-text">
-                    <button type="button" class="btn btn-secondary btn-sm px-4 gap-3" style="font-size: medium;">Свържи се с нас</button>
-          </span>
-        </div>
-      </div>
-    </nav>
-    
-    <section>
-<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-  <path fill="#0099ff" fill-opacity="1" d="M0,32L120,48C240,64,480,96,720,96C960,96,1200,64,1320,48L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
-</svg>-->
-  <div class="px-4 py-5  text-center">
-    <img class="d-block mx-auto mb-4" src="./assets/images/logo.webp" alt="" width="172" height="157">
-    <h1 class="display-5 fw-bold">СиМ Консулт Къмпани</h1>
-    <p> Заедно градим стабилност и сигурност – цялостно счетоводно обслужване, ТРЗ и осигурителни услуги,<br>
-     застрахователна защита и професионални правни консултации за вашия бизнес.</p>
-    <div class="col-lg-6 mx-auto">
-    <div class="container my-5">
-      <div class="row justify-content-center g-4">
-        
-        <!-- Card 1 -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card h-100 shadow-sm text-center">
-               <center> <i class="bi bi-calculator display-2 text-primary mb-3"></i></center>
-            <div class="card-body">
-              <h5 class="card-title">Счетоводно обслужване</h5>
-              <p class="card-text">Пълно счетоводно обслужване, месечни и годишни отчети, ДДС декларации, финансов анализ, данъчни консултации.</p>
-              
-            </div>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-2 ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">За нас</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#stats">Защо S&M</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#div_emply">Цени</a>
+              </li>
+            </ul>
+
+            
+            <span class="navbar-text">
+                      <button type="button" class="btn btn-secondary btn-sm px-4 gap-3" style="font-size: medium;">Свържи се с нас</button>
+            </span>
           </div>
         </div>
-
-        <!-- Card 2 -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card h-100 shadow-sm text-center">
-               <center> <i class="bi bi-file-earmark-text display-2 text-primary mb-3"></i></center>
-            <div class="card-body">
-              <h5 class="card-title">ТРЗ и осигурителни услуги</h5>
-              <p class="card-text">Трудови договори, фишове, болнични, осигуровки, ведомости, уведомления към НАП</p>
-              
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card h-100 shadow-sm text-center">
-               <center> <i class="bi bi-shield-check display-2 text-primary mb-3"></i></center>
-            <div class="card-body">
-              <h5 class="card-title">Застрахователни услуги</h5>
-              <p class="card-text">Гражданска отговорност, автокаско, имущество, здраве, живот</p>
-              
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card h-100 shadow-sm text-center">
-               <center> <i class="bi bi-briefcase display-2 text-primary mb-3"></i></center>
-            <div class="card-body">
-              <h5 class="card-title">Правни консултации</h5>
-              <p class="card-text">Учредяване на фирми, изготвяне на договори, консултации, търговско и гражданско право</p>
-              
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Запази час за консултация!</button>
-      </div>
-    </div>
-</section>
-
-<section class="py-5 bg-light text-center" data-aos="fade-up" id="stats">
-  <div class="container">
-    <p class="h3 pb-4">Защо да изберете нас?</p>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <h2 class="counter display-4 fw-bold text-primary" data-target="4">0</h2>
-        <p class="mb-0">Доволни клиенти</p>
-      </div>
-      <div class="col-md-4">
-        <h2 class="counter display-4 fw-bold text-primary" data-target="2">0</h2>
-        <p class="mb-0">Завършени проекта</p>
-      </div>
-      <div class="col-md-4">
-        <h2 class="counter display-4 fw-bold text-primary" data-target="5">0</h2>
-        <p class="mb-0">Години опит</p>
-      </div>
-    </div>
-  </div>
-
-
-   <div class="container">
-    <h2 class="text-center mt-5">Отзиви от клиенти</h2>
-    <div class="row g-4">
-
-      <!-- Review 1 -->
-      <div class="col-12 col-sm-6 col-lg-3">
-        <div class="card h-100 p-3 shadow-sm">
-          <div class="d-flex align-items-start">
-            <img src="./assets/images/stockPerson.webp"
-                 alt="Client"
-                 class="rounded-circle me-3"
-                 style="width:100px; height:100px; object-fit:cover;">
-            <div>
-              <h5 class="card-title mb-1">Име Фамилия</h5>
-              <p class="card-text small mb-1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien ut libero.
-              </p>
-              <p class="card-text"><small class="text-muted">Клиент</small></p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Review 2 -->
-      <div class="col-12 col-sm-6 col-lg-3">
-        <div class="card h-100 p-3 shadow-sm">
-          <div class="d-flex align-items-start">
-            <img src="./assets/images/stockPerson.webp"
-                 alt="Client"
-                 class="rounded-circle me-3"
-                 style="width:100px; height:100px; object-fit:cover;">
-            <div>
-              <h5 class="card-title mb-1">Име Фамилия</h5>
-              <p class="card-text small mb-1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien ut libero.
-              </p>
-              <p class="card-text"><small class="text-muted">Клиент</small></p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Review 3 -->
-      <div class="col-12 col-sm-6 col-lg-3">
-        <div class="card h-100 p-3 shadow-sm">
-          <div class="d-flex align-items-start">
-              <img src="./assets/images/stockPerson.webp"
-                 alt="Client"
-                 class="rounded-circle me-3"
-                 style="width:100px; height:100px; object-fit:cover;">
-            <div>
-              <h5 class="card-title mb-1">Име Фамилия</h5>
-              <p class="card-text small mb-1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien ut libero.
-              </p>
-              <p class="card-text"><small class="text-muted">Клиент</small></p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Review 4 -->
-      <div class="col-12 col-sm-6 col-lg-3">
-        <div class="card h-100 p-3 shadow-sm">
-          <div class="d-flex align-items-start">
-            <img src="./assets/images/stockPerson.webp"
-                 alt="Client"
-                 class="rounded-circle me-3"
-                 style="width:100px; height:100px; object-fit:cover;">
-            <div>
-              <h5 class="card-title mb-1">Име Фамилия</h5>
-              <p class="card-text small mb-1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien ut libero.
-              </p>
-              <p class="card-text"><small class="text-muted">Клиент</small></p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-</section>
-
-
-
-  </div>
-
-    
-  </section>
-
-  <section style="margin-top: -40px;" id="div_emply" data-aos="fade-up">
-
+      </nav>
+      </header>
+      
+      <section id="hero" aria-labelledby="hero-title">
+  <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#0099ff" fill-opacity="1" d="M0,32L120,48C240,64,480,96,720,96C960,96,1200,64,1320,48L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+  </svg>-->
     <div class="px-4 py-5  text-center">
-    <h1 class="display-5 fw-bold">Служители</span></h1>
-    <div class="col-lg-6 mx-auto">
-    <div class="container my-5">
-      <div class="row justify-content-center g-4">
-        
-        <!-- Card 1 -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card h-100 text-center">
-               <center> <img src="./assets/images/stockPerson.webp" class="rounded-circle" alt="..." style="width: 150px; height: 150px; object-fit: cover; padding: 5px;"></center>
-            <div class="card-body">
-              <h5 class="card-title">Име Име</h5>
-              <p class="card-text">Позиция</p>
-              
+      <img class="d-block mx-auto mb-4" src="./assets/images/logo.webp" alt="" width="172" height="157">
+      <h1 class="display-5 fw-bold">СиМ Консулт Къмпани</h1>
+      <p> Заедно градим стабилност и сигурност – цялостно счетоводно обслужване, ТРЗ и осигурителни услуги,<br>
+      застрахователна защита и професионални правни консултации за вашия бизнес.</p>
+      <div class="col-lg-6 mx-auto">
+      <div class="container my-5">
+        <div class="row justify-content-center g-4">
+          
+          <!-- Card 1 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 shadow-sm text-center">
+                <center> <i class="bi bi-calculator display-2 text-primary mb-3"></i></center>
+              <div class="card-body">
+                <h2 class="h5 card-title">Счетоводно обслужване</h2>
+                <p class="card-text">Пълно счетоводно обслужване, месечни и годишни отчети, ДДС декларации, финансов анализ, данъчни консултации.</p>
+                
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 shadow-sm text-center">
+                <center> <i class="bi bi-file-earmark-text display-2 text-primary mb-3"></i></center>
+              <div class="card-body">
+                <h2 class="h5 card-title">Счетоводно обслужване</h2>
+                <p class="card-text">Трудови договори, фишове, болнични, осигуровки, ведомости, уведомления към НАП</p>
+                
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 shadow-sm text-center">
+                <center> <i class="bi bi-shield-check display-2 text-primary mb-3"></i></center>
+              <div class="card-body">
+                <h2 class="h5 card-title">Счетоводно обслужване</h2>
+                <p class="card-text">Гражданска отговорност, автокаско, имущество, здраве, живот</p>
+                
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 shadow-sm text-center">
+                <center> <i class="bi bi-briefcase display-2 text-primary mb-3"></i></center>
+              <div class="card-body">
+                <h2 class="h5 card-title">Счетоводно обслужване</h2>
+                <p class="card-text">Учредяване на фирми, изготвяне на договори, консултации, търговско и гражданско право</p>
+                
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Запази час за консултация!</button>
+        </div>
+      </div>
+  </section>
+
+  <section class="py-5 bg-light text-center" data-aos="fade-up" id="stats" aria-labelledby="whyus-title">
+    <div class="container">
+      <h2 id="whyus-title" class="pb-4">Защо да изберете нас</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h2 class="counter display-4 fw-bold text-primary" data-target="4">0</h2>
+          <p class="mb-0">Доволни клиенти</p>
+        </div>
+        <div class="col-md-4">
+          <h2 class="counter display-4 fw-bold text-primary" data-target="2">0</h2>
+          <p class="mb-0">Завършени проекта</p>
+        </div>
+        <div class="col-md-4">
+          <h2 class="counter display-4 fw-bold text-primary" data-target="5">0</h2>
+          <p class="mb-0">Години опит</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <h2 class="text-center mt-5">Отзиви от клиенти</h2>
+      <div class="row g-4">
+
+        <!-- Review 1 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 p-3 shadow-sm">
+            <div class="d-flex align-items-start">
+              <img src="./assets/images/stockPerson.webp"
+                  alt="Client"
+                  class="rounded-circle me-3"
+                  style="width:100px; height:100px; object-fit:cover;">
+              <div>
+                <h3 class="h6 card-title mb-1">Име Фамилия</h3>
+                <p class="card-text small mb-1">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien ut libero.
+                </p>
+                <p class="card-text"><small class="text-muted">Клиент</small></p>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Card 2 -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card h-100 text-center">
-               <center> <img src="./assets/images/stockPerson.webp" class="rounded-circle" alt="..." style="width: 150px; height: 150px; object-fit: cover; padding: 5px;"></center>
-            <div class="card-body">
-              <h5 class="card-title">Име Име</h5>
-              <p class="card-text">Позиция</p>
-              
+        <!-- Review 2 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 p-3 shadow-sm">
+            <div class="d-flex align-items-start">
+              <img src="./assets/images/stockPerson.webp"
+                  alt="Client"
+                  class="rounded-circle me-3"
+                  style="width:100px; height:100px; object-fit:cover;">
+              <div>
+                <h3 class="h6 card-title mb-1">Име Фамилия</h3>
+                <p class="card-text small mb-1">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien ut libero.
+                </p>
+                <p class="card-text"><small class="text-muted">Клиент</small></p>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Card 3 -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card h-100 text-center">
-               <center> <img src="./assets/images/stockPerson.webp" class="rounded-circle" alt="..." style="width: 150px; height: 150px; object-fit: cover; padding: 5px;"></center>
-            <div class="card-body">
-              <h5 class="card-title">Име Име</h5>
-              <p class="card-text">Позиция</p>
-              
+        <!-- Review 3 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 p-3 shadow-sm">
+            <div class="d-flex align-items-start">
+                <img src="./assets/images/stockPerson.webp"
+                  alt="Client"
+                  class="rounded-circle me-3"
+                  style="width:100px; height:100px; object-fit:cover;">
+              <div>
+                <h3 class="h6 card-title mb-1">Име Фамилия</h3>
+                <p class="card-text small mb-1">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien ut libero.
+                </p>
+                <p class="card-text"><small class="text-muted">Клиент</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 p-3 shadow-sm">
+            <div class="d-flex align-items-start">
+              <img src="./assets/images/stockPerson.webp"
+                  alt="Client"
+                  class="rounded-circle me-3"
+                  style="width:100px; height:100px; object-fit:cover;">
+              <div>
+                <h3 class="h6 card-title mb-1">Име Фамилия</h3>
+                <p class="card-text small mb-1">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien ut libero.
+                </p>
+                <p class="card-text"><small class="text-muted">Клиент</small></p>
+              </div>
             </div>
           </div>
         </div>
@@ -287,6 +233,67 @@
     </div>
 
   </section>
+
+
+
+    </div>
+
+      
+    </section>
+
+    <section style="margin-top: -40px;" id="div_emply" data-aos="fade-up" aria-labelledby="team-title">
+
+
+      <div class="px-4 py-5  text-center">
+      <h2 id="team-title" class="display-5 fw-bold">Нашият екип</h2>
+      <div class="col-lg-6 mx-auto">
+      <div class="container my-5">
+        <div class="row justify-content-center g-4">
+          
+          <!-- Card 1 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 text-center">
+                <center> <img src="./assets/images/stockPerson.webp" class="rounded-circle" alt="..." style="width: 150px; height: 150px; object-fit: cover; padding: 5px;"></center>
+              <div class="card-body">
+                <h3 class="h6 card-title">Име Име</h3>
+                <p class="card-text">Позиция</p>
+                
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 text-center">
+                <center> <img src="./assets/images/stockPerson.webp" class="rounded-circle" alt="..." style="width: 150px; height: 150px; object-fit: cover; padding: 5px;"></center>
+              <div class="card-body">
+                <h3 class="h6 card-title">Име Име</h3>
+                <p class="card-text">Позиция</p>
+                
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 text-center">
+                <center> <img src="./assets/images/stockPerson.webp" class="rounded-circle" alt="..." style="width: 150px; height: 150px; object-fit: cover; padding: 5px;"></center>
+              <div class="card-body">
+                <h3 class="h6 card-title">Име Име</h3>
+                <p class="card-text">Позиция</p>
+                
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+  </section>
+
+  <footer class="text-center py-3 bg-light">
+    <p class="small text-muted mb-0">&copy; 2025 СиМ Консулт Къмпани</p>
+  </footer>
 
 
     <!--
@@ -302,72 +309,72 @@
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-<script>
-AOS.init({ duration: 800, once: true });
+    <script>
+    AOS.init({ duration: 800, once: true });
 
-// Count-up (time-based, runs once)
-function startCounter(el) {
-  if (el.dataset.animated === "true") return; // prevent re-run
-  el.dataset.animated = "true";
+    // Count-up (time-based, runs once)
+    function startCounter(el) {
+      if (el.dataset.animated === "true") return; // prevent re-run
+      el.dataset.animated = "true";
 
-  const target = Number(el.dataset.target || 0);
-  const duration = Number(el.dataset.duration || 3000); // ms
-  const start = performance.now();
+      const target = Number(el.dataset.target || 0);
+      const duration = Number(el.dataset.duration || 3000); // ms
+      const start = performance.now();
 
-  function tick(now) {
-    const p = Math.min((now - start) / duration, 1); // 0..1
-    const value = Math.floor(p * target);
-    el.textContent = value;
-    if (p < 1) requestAnimationFrame(tick);
-  }
-  requestAnimationFrame(tick);
-}
+      function tick(now) {
+        const p = Math.min((now - start) / duration, 1); // 0..1
+        const value = Math.floor(p * target);
+        el.textContent = value;
+        if (p < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    }
 
-function startCountersIn(container) {
-  container.querySelectorAll(".counter").forEach(startCounter);
-}
+    function startCountersIn(container) {
+      container.querySelectorAll(".counter").forEach(startCounter);
+    }
 
-// Observe the counters section
-document.addEventListener("DOMContentLoaded", () => {
-  const stats = document.getElementById("stats");
-  if (!stats) return;
+    // Observe the counters section
+    document.addEventListener("DOMContentLoaded", () => {
+      const stats = document.getElementById("stats");
+      if (!stats) return;
 
-  const io = new IntersectionObserver(
-    entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          startCountersIn(stats);
-          io.unobserve(stats);
-        }
-      });
-    },
-    { threshold: 0.25 }
-  );
+      const io = new IntersectionObserver(
+        entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              startCountersIn(stats);
+              io.unobserve(stats);
+            }
+          });
+        },
+        { threshold: 0.25 }
+      );
 
-  io.observe(stats);
+      io.observe(stats);
 
-  // Fallback: if already visible at load (e.g., very short page)
-  const r = stats.getBoundingClientRect();
-  if (r.top < window.innerHeight && r.bottom > 0) {
-    startCountersIn(stats);
-    io.unobserve(stats);
-  }
-});
+      // Fallback: if already visible at load (e.g., very short page)
+      const r = stats.getBoundingClientRect();
+      if (r.top < window.innerHeight && r.bottom > 0) {
+        startCountersIn(stats);
+        io.unobserve(stats);
+      }
+    });
 
-// Optional: if you still want to also react to AOS events elsewhere
-document.addEventListener("aos:in", e => {
-  if (e.detail && (e.detail.id === "stats" || e.detail.querySelector?.(".counter"))) {
-    const container = e.detail.id === "stats" ? e.detail : document.getElementById("stats");
-    if (container) startCountersIn(container);
-  }
-});
-</script>
-
-
+    // Optional: if you still want to also react to AOS events elsewhere
+    document.addEventListener("aos:in", e => {
+      if (e.detail && (e.detail.id === "stats" || e.detail.querySelector?.(".counter"))) {
+        const container = e.detail.id === "stats" ? e.detail : document.getElementById("stats");
+        if (container) startCountersIn(container);
+      }
+    });
+    </script>
 
 
+
+</main>
   </body>
 </html>
