@@ -19,9 +19,10 @@
     <meta name="twitter:image" content="https://urek00bg.github.io/SandMConsultCompanyLtd/assets/images/logo.webp">
 
     <link rel="icon" href="./assets/images/logo.webp" type="image/png">
-    <link href="./assets/css/main.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+     <link href="./assets/css/main.css" rel="stylesheet">
+
 
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lobster&family=Sirivennela&display=swap');
@@ -43,22 +44,20 @@
             <div class="collapse navbar-collapse" id="navbarText">
               <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-2">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" aria-label="Научи повече за нас" href="#">За нас</a>
-                </li>
-                <li class="nav-item">
                   <a class="nav-link" aria-label="Защо да изберете нас" href="#stats">Защо С&M</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" aria-label="Защо да изберете нас" href="#about">За нас</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#div_emply">Цени</a>
+                  <a class="nav-link" href="#contact">Изпратете запитване</a>
                 </li>
               </ul>
 
               <span class="navbar-text">
-                <button type="button" class="btn btn-secondary btn-sm px-4 gap-3" style="font-size: medium;"
-                  ariel-label="Запази час за консултация">Свържи се с нас</button>
+                <button id="theme-toggle" style="color: black !important;" class="btn btn-outline-secondary btn-sm px-3 bg-light">
+                  <i class="bi bi-moon-stars"></i>
+                </button>
               </span>
             </div>
           </div>
@@ -124,16 +123,16 @@
             </div>
 
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-              <button type="button" ariel-label="Запази час за консултация" class="btn btn-primary btn-lg px-4 gap-3">
+             <a href="#contact"> <button type="button" ariel-label="Запази час за консултация" class="btn btn-primary btn-lg px-4 gap-3">
                 Запази час за консултация!
-              </button>
+              </button></a>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Why Us Section -->
-      <section class="py-5 bg-light text-center" data-aos="fade-up" id="stats" aria-labelledby="whyus-title">
+      <section class="py-5 bg-theme-card shadow-sm text-center" data-aos="fade-up" id="stats" aria-labelledby="whyus-title">
         <div class="container">
           <h2 id="whyus-title" class="pb-4">Защо да изберете нас</h2>
           <div class="row g-3">
@@ -239,7 +238,7 @@
 
 
       <!-- Team Section -->
-      <section class="py-5 bg-light text-center"" id="div_emply" data-aos="fade-up" aria-labelledby="team-title">
+      <section class="py-5 bg-theme-card shadow-sm text-center"" id="div_emply" data-aos="fade-up" aria-labelledby="team-title">
         <div class="px-4 py-1 text-center">
           <h2 id="team-title"">Нашият екип</h2>
           <div class="col-lg-6 mx-auto">
@@ -317,7 +316,7 @@
 
       <!-- GDPR consent -->
       <div class="form-check mb-3">
-        <input class="form-check-input" type="checkbox" id="consent" required>
+        <input class="form-check-input" style="border-color: black; cursor: pointer;" type="checkbox" id="consent" required>
         <label class="form-check-label" for="consent">
           Съгласен съм личните ми данни да бъдат използвани за връзка с мен според 
           <a href="./pages/privacy-policy.html" target="_blank">Политиката за поверителност</a>.
@@ -344,7 +343,7 @@
 
 
 
-<footer class="bg-dark text-light py-4" id="footer" aria-labelledby="footer-section">
+<footer class="bg-theme-card shadow-sm py-4" id="footer" aria-labelledby="footer-section">
   <div class="container">
     <div class="row g-5 text-start text-md-start">
       
@@ -379,14 +378,14 @@
       <div class="col-md-4 d-flex flex-column align-items-center">
         <h2 class="h5 text-uppercase mb-3">Контакти</h2>
         <div>
-          <p class="mb-1">Телефон: <a href="tel:+359896824201" class="text-light">+359 888 123 456</a></p>
-          <p class="mb-1">Телефон: <a href="tel:+359884231213" class="text-light">+359 888 123 456</a></p>
-          <p class="mb-4">Имейл: <a href="mailto:info@simconsult.bg" class="text-light">countonsm@outlook.com</a></p>
+          <p class="mb-1">Телефон: <a href="tel:+359896824201" >+359 888 123 456</a></p>
+          <p class="mb-1">Телефон: <a href="tel:+359884231213" >+359 888 123 456</a></p>
+          <p class="mb-4">Имейл: <a href="mailto:info@simconsult.bg" >countonsm@outlook.com</a></p>
         </div>
 
         <h2 class="h5 text-uppercase mb-3">Следвайте ни</h2>
         <div>
-          <a href="https://www.facebook.com/people/SM-Consult-Company/61579831037190/" target="_blank" class="text-light d-block">Facebook</a>
+          <a href="https://www.facebook.com/people/SM-Consult-Company/61579831037190/" target="_blank" class=" d-block">Facebook</a>
         </div>
       </div>
 
@@ -397,7 +396,30 @@
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      
+<script>
+const htmlEl = document.documentElement;
+const toggleBtn = document.getElementById("theme-toggle");
+const toggleIcon = toggleBtn.querySelector("i");
 
+// Load saved theme
+if (localStorage.getItem("theme")) {
+  const savedTheme = localStorage.getItem("theme");
+  htmlEl.setAttribute("data-bs-theme", savedTheme);
+  toggleIcon.className = savedTheme === "dark" ? "bi bi-sun-fill" : "bi bi-moon-stars";
+}
+
+// Toggle theme on click
+toggleBtn.addEventListener("click", () => {
+  const currentTheme = htmlEl.getAttribute("data-bs-theme");
+  const newTheme = currentTheme === "dark" ? "light" : "dark";
+  htmlEl.setAttribute("data-bs-theme", newTheme);
+  localStorage.setItem("theme", newTheme);
+
+  // Update icon only
+  toggleIcon.className = newTheme === "dark" ? "bi bi-sun-fill" : "bi bi-moon-stars";
+});
+</script>
       <script>
         AOS.init({ duration: 800, once: true });
 

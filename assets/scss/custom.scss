@@ -6,7 +6,41 @@ $success:    #5a7d7c;
 $warning:    #c8a97e;
 $danger:     #af4d4d;
 $info:       #4c6ef5;
+:root,
+[data-bs-theme="light"] {
+  --bs-body-bg: #ebebeb;  // your gray background
+  --section-card-bg: #ffffff;
+}
 
+[data-bs-theme="dark"] {
+  --bs-body-bg: #212529;  // Bootstrap dark gray
+  --section-card-bg: #2b3034;
+  --bs-body-color: #ffffff;  // very light gray
+}
+/* Light mode */
+/* Make button text always inherit theme color */
+#theme-toggle {
+  color: black;
+  background-color: transparent;
+}
+
+/* On hover: no color flip, just bold */
+#theme-toggle:hover {
+  color: black;
+  background-color: transparent;
+  opacity: .5;
+    transition: all 0.3s ease;
+
+}
+
+/* Ensure icon follows text color */
+#theme-toggle i {
+  color: inherit;
+}
+// Custom class for card/section backgrounds
+.bg-theme-card {
+  background-color: var(--section-card-bg) !important;
+}
 .card {
   transition: all 0.3s ease;
 
@@ -26,7 +60,8 @@ $info:       #4c6ef5;
 }
 .btn {
   transition: opacity 0.3s ease;
-
+  font-weight: 700 !important;
+  color: white !important;
   &:hover {
     opacity: 0.85;
   }
