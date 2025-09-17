@@ -56,7 +56,7 @@
 
               <span class="navbar-text">
                 <button id="theme-toggle" style="color: black !important;" class="btn btn-outline-secondary btn-sm px-3 bg-light" ariel-label="Смени цвета на страницата" >
-                  <i class="bi bi-moon-stars"></i>
+                  <i class="bi bi-moon-stars">Тема</i>
                 </button>
               </span>
             </div>
@@ -240,7 +240,7 @@
       <!-- Team Section -->
       <section class="py-5 bg-theme-card shadow-sm text-center"" id="div_emply" data-aos="fade-up" aria-labelledby="team-title">
         <div class="px-4 py-1 text-center">
-          <h2 id="team-title"">Нашият екип</h2>
+          <h2 id="team-title">Нашият екип</h2>
           <div class="col-lg-6 mx-auto">
             <div class="container my-5">
               <div class="row justify-content-center g-4">
@@ -295,7 +295,7 @@
   <div class="container">
     <h2 class="text-center mb-4">Свържете се с нас</h2>
 
-    <form action="https://formsubmit.co/dec1eda6509cb1c2ae9be611d675c5f0" method="POST" class="mx-auto" style="max-width: 600px;">
+    <form action="https://formsubmit.co/dec1eda6509cb1c2ae9be611d675c5f0" method="POST" class="mx-auto" id="contactUs-section" style="max-width: 600px;">
       <!-- Name -->
       <div class="mb-3">
         <label for="name" class="form-label">Име</label>
@@ -324,7 +324,10 @@
       </div>
 
       <!-- Honeypot -->
-      <input type="text" name="_honey" style="display:none">
+    <div class="visually-hidden">
+      <label for="honey">Оставете това поле празно</label>
+      <input type="text" id="honey" name="_honey" tabindex="-1" autocomplete="off">
+    </div>
 
       <!-- Enable Captcha -->
 
@@ -348,7 +351,7 @@
     <div class="row g-5 text-start text-md-start">
       
       <!-- Column 1: Map -->
-      <div class="col-md-4 d-flex flex-column align-items-center">
+      <div class="col-md-4 d-flex flex-column align-items-center" id="footer-section">
         <h2 class="h5 text-uppercase mb-3">Карта</h2>
         <div class="ratio ratio-4x3" style="max-width: 250px; width: 100%;">
           <iframe

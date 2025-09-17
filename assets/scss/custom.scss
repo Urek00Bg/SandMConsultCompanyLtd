@@ -1,63 +1,77 @@
 $body-bg:    #ebebeb;
-$body-color: #080808; //text color
-$primary:    #d78c87;  // your brand pink
+$body-color: #080808; // text color
+$primary:    #d78c87;  // brand base (used for accents/headings, not small text)
 $secondary:  #3a3f58;  // dark gray/blue
 $success:    #5a7d7c;
 $warning:    #c8a97e;
 $danger:     #af4d4d;
 $info:       #4c6ef5;
+
+// Define accessible brand shades
 :root,
 [data-bs-theme="light"] {
-  --bs-body-bg: #ebebeb;  // your gray background
+  --bs-body-bg: #ebebeb;
   --section-card-bg: #ffffff;
-  #footer a{
-  color: #d78c87;
-  font-weight: 650;
-  text-decoration: none;
-}
-}
 
-[data-bs-theme="dark"] {
-  --bs-body-bg: #212529;  // Bootstrap dark gray
-  --section-card-bg: #2b3034;
-  --bs-body-color: #ffffff;  // very light gray
-    #footer a {
-    color: #d78c87;
+  // brand scale for light mode
+  --brand-400: #d78c87; // original
+  --brand-700: #994A44; // passes AA vs white/gray
+  --brand-800: #8F3E38; // stronger for buttons/links
+
+  #footer a {
+    color: var(--brand-700);
     font-weight: 650;
     text-decoration: none;
   }
 }
-/* Light mode */
-/* Make button text always inherit theme color */
+
+[data-bs-theme="dark"] {
+  --bs-body-bg: #212529;
+  --section-card-bg: #2b3034;
+  --bs-body-color: #ffffff;
+
+  // brand scale for dark mode
+  --brand-400: #d78c87; // works fine on dark bg
+  --brand-600: #B25B54; // darker hover state
+
+  #footer a {
+    color: var(--brand-400);
+    font-weight: 650;
+    text-decoration: none;
+  }
+}
+
+/* Dark/Light toggle button */
 #theme-toggle {
-  color: black;
+  color: var(--bs-body-color);
   background-color: transparent;
-}
-
-
-/* On hover: no color flip, just bold */
-#theme-toggle:hover {
-  color: black;
-  background-color: transparent;
-  opacity: .5;
+  border: 1px solid var(--bs-body-color);
   transition: all 0.3s ease;
-
 }
 
-/* Ensure icon follows text color */
+#theme-toggle:hover {
+  color: var(--bs-body-color);
+  border-color: var(--bs-body-color);
+  font-weight: 700;
+  background-color: transparent;
+  opacity: 0.8;
+}
+
 #theme-toggle i {
   color: inherit;
 }
-// Custom class for card/section backgrounds
+
+/* Custom card/section backgrounds */
 .bg-theme-card {
   background-color: var(--section-card-bg) !important;
 }
+
 .card {
   transition: all 0.3s ease;
 
   &:hover {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-    border-color: $primary; // border becomes your theme color
+    border-color: var(--brand-700);
     transform: translateY(-5px);
   }
 
@@ -65,23 +79,41 @@ $info:       #4c6ef5;
     transition: color 0.3s ease;
 
     &:hover {
-      color: $primary; // title changes to theme color
+      color: var(--brand-700);
     }
   }
 }
-.btn {
-  transition: opacity 0.3s ease;
-  font-weight: 700 !important;
-  color: white !important;
-  padding: 12px 24px !important;
-  &:hover {
-    opacity: 0.85;
-  }
 
-  &:active {
-    opacity: 0.75;
+/* Accessible Brand Buttons */
+.btn-brand {
+  font-weight: 700;
+  padding: 12px 24px;
+}
+
+[data-bs-theme="light"] .btn-brand {
+  background-color: var(--brand-700);
+  border-color: var(--brand-700);
+  color: #fff !important;
+
+  &:hover {
+    background-color: var(--brand-800);
+    border-color: var(--brand-800);
+    color: #fff !important;
   }
 }
+
+[data-bs-theme="dark"] .btn-brand {
+  background-color: var(--brand-400);
+  border-color: var(--brand-400);
+  color: #000 !important;
+
+  &:hover {
+    background-color: var(--brand-600);
+    border-color: var(--brand-600);
+    color: #000 !important;
+  }
+}
+
 .nav-link,
 #footer a {
   position: relative;
@@ -106,6 +138,5 @@ $info:       #4c6ef5;
     width: 100%;
   }
 }
-
 
 @import "../../node_modules/bootstrap/scss/bootstrap";

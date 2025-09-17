@@ -3,10 +3,13 @@
 [data-bs-theme=light] {
   --bs-body-bg: #ebebeb;
   --section-card-bg: #ffffff;
+  --brand-400: #d78c87;
+  --brand-700: #994A44;
+  --brand-800: #8F3E38;
 }
 :root #footer a,
 [data-bs-theme=light] #footer a {
-  color: #d78c87;
+  color: var(--brand-700);
   font-weight: 650;
   text-decoration: none;
 }
@@ -15,33 +18,36 @@
   --bs-body-bg: #212529;
   --section-card-bg: #2b3034;
   --bs-body-color: #ffffff;
+  --brand-400: #d78c87;
+  --brand-600: #B25B54;
 }
 [data-bs-theme=dark] #footer a {
-  color: #d78c87;
+  color: var(--brand-400);
   font-weight: 650;
   text-decoration: none;
 }
 
-/* Light mode */
-/* Make button text always inherit theme color */
+/* Dark/Light toggle button */
 #theme-toggle {
-  color: black;
+  color: var(--bs-body-color);
   background-color: transparent;
-}
-
-/* On hover: no color flip, just bold */
-#theme-toggle:hover {
-  color: black;
-  background-color: transparent;
-  opacity: 0.5;
+  border: 1px solid var(--bs-body-color);
   transition: all 0.3s ease;
 }
 
-/* Ensure icon follows text color */
+#theme-toggle:hover {
+  color: var(--bs-body-color);
+  border-color: var(--bs-body-color);
+  font-weight: 700;
+  background-color: transparent;
+  opacity: 0.8;
+}
+
 #theme-toggle i {
   color: inherit;
 }
 
+/* Custom card/section backgrounds */
 .bg-theme-card {
   background-color: var(--section-card-bg) !important;
 }
@@ -51,27 +57,42 @@
 }
 .card:hover {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  border-color: #d78c87;
+  border-color: var(--brand-700);
   transform: translateY(-5px);
 }
 .card .card-title {
   transition: color 0.3s ease;
 }
 .card .card-title:hover {
-  color: #d78c87;
+  color: var(--brand-700);
 }
 
-.btn {
-  transition: opacity 0.3s ease;
-  font-weight: 700 !important;
-  color: white !important;
-  padding: 12px 24px !important;
+/* Accessible Brand Buttons */
+.btn-brand {
+  font-weight: 700;
+  padding: 12px 24px;
 }
-.btn:hover {
-  opacity: 0.85;
+
+[data-bs-theme=light] .btn-brand {
+  background-color: var(--brand-700);
+  border-color: var(--brand-700);
+  color: #fff !important;
 }
-.btn:active {
-  opacity: 0.75;
+[data-bs-theme=light] .btn-brand:hover {
+  background-color: var(--brand-800);
+  border-color: var(--brand-800);
+  color: #fff !important;
+}
+
+[data-bs-theme=dark] .btn-brand {
+  background-color: var(--brand-400);
+  border-color: var(--brand-400);
+  color: #000 !important;
+}
+[data-bs-theme=dark] .btn-brand:hover {
+  background-color: var(--brand-600);
+  border-color: var(--brand-600);
+  color: #000 !important;
 }
 
 .nav-link,
