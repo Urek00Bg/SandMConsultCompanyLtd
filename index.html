@@ -6,7 +6,6 @@
     <title>СиМ Консулт Къмпани</title>
     <meta name="description" content="СиМ Консулт Къмпани предлага счетоводни услуги, ТРЗ и осигурителни услуги, застрахователна защита и професионални правни консултации за бизнеса ви.">
 
-    <!--Fix contrasts-->
     <meta property="og:title" content="СиМ Консулт Къмпани">
     <meta property="og:description" content="Счетоводни, ТРЗ, Застрахователни и Правни услуги за вашия бизнес.">
     <meta property="og:image" content="https://urek00bg.github.io/SandMConsultCompanyLtd/assets/images/logo.webp">
@@ -47,7 +46,7 @@
                   <a class="nav-link" aria-label="Защо да изберете нас" href="#stats">Защо С&M</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" aria-label="Защо да изберете нас" href="#about">За нас</a>
+                  <a class="nav-link" aria-label="Повече информация за нас" href="#about">За нас</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#contact">Изпратете запитване</a>
@@ -399,87 +398,9 @@
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      
-<script>
-const htmlEl = document.documentElement;
-const toggleBtn = document.getElementById("theme-toggle");
-const toggleIcon = toggleBtn.querySelector("i");
-
-// Load saved theme
-if (localStorage.getItem("theme")) {
-  const savedTheme = localStorage.getItem("theme");
-  htmlEl.setAttribute("data-bs-theme", savedTheme);
-  toggleIcon.className = savedTheme === "dark" ? "bi bi-sun-fill" : "bi bi-moon-stars";
-}
-
-// Toggle theme on click
-toggleBtn.addEventListener("click", () => {
-  const currentTheme = htmlEl.getAttribute("data-bs-theme");
-  const newTheme = currentTheme === "dark" ? "light" : "dark";
-  htmlEl.setAttribute("data-bs-theme", newTheme);
-  localStorage.setItem("theme", newTheme);
-
-  // Update icon only
-  toggleIcon.className = newTheme === "dark" ? "bi bi-sun-fill" : "bi bi-moon-stars";
-});
-</script>
-      <script>
-        AOS.init({ duration: 800, once: true });
-
-        // Count-up
-        function startCounter(el) {
-          if (el.dataset.animated === "true") return;
-          el.dataset.animated = "true";
-
-          const target = Number(el.dataset.target || 0);
-          const duration = Number(el.dataset.duration || 3000);
-          const start = performance.now();
-
-          function tick(now) {
-            const p = Math.min((now - start) / duration, 1);
-            const value = Math.floor(p * target);
-            el.textContent = value;
-            if (p < 1) requestAnimationFrame(tick);
-          }
-          requestAnimationFrame(tick);
-        }
-
-        function startCountersIn(container) {
-          container.querySelectorAll(".counter").forEach(startCounter);
-        }
-
-        document.addEventListener("DOMContentLoaded", () => {
-          const stats = document.getElementById("stats");
-          if (!stats) return;
-
-          const io = new IntersectionObserver(
-            entries => {
-              entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                  startCountersIn(stats);
-                  io.unobserve(stats);
-                }
-              });
-            },
-            { threshold: 0.25 }
-          );
-
-          io.observe(stats);
-
-          const r = stats.getBoundingClientRect();
-          if (r.top < window.innerHeight && r.bottom > 0) {
-            startCountersIn(stats);
-            io.unobserve(stats);
-          }
-        });
-
-        document.addEventListener("aos:in", e => {
-          if (e.detail && (e.detail.id === "stats" || e.detail.querySelector?.(".counter"))) {
-            const container = e.detail.id === "stats" ? e.detail : document.getElementById("stats");
-            if (container) startCountersIn(container);
-          }
-        });
-      </script>
+      <script src="assets/js/theme-toggle.js"></script>
+      <script src="assets/js/aos-init.js"></script>
+      <script src="assets/js/counter.js"></script>
     </main>
   </body>
 </html>
