@@ -67,6 +67,10 @@
   color: var(--brand-700);
 }
 
+.form-control {
+  border: 1.5px solid #d78c87 !important;
+}
+
 /* Accessible Brand Buttons */
 .btn-brand {
   font-weight: 700;
