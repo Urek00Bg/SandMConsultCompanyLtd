@@ -8,7 +8,9 @@
   --brand-800: #8F3E38;
 }
 :root #footer a,
-[data-bs-theme=light] #footer a {
+:root .form-check-label a,
+[data-bs-theme=light] #footer a,
+[data-bs-theme=light] .form-check-label a {
   color: var(--brand-700);
   font-weight: 650;
   text-decoration: none;
@@ -21,7 +23,8 @@
   --brand-400: #d78c87;
   --brand-600: #B25B54;
 }
-[data-bs-theme=dark] #footer a {
+[data-bs-theme=dark] #footer a,
+[data-bs-theme=dark] .form-check-label a {
   color: var(--brand-400);
   font-weight: 650;
   text-decoration: none;

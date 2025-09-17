@@ -18,7 +18,8 @@ $info:       #4c6ef5;
   --brand-700: #994A44; // passes AA vs white/gray
   --brand-800: #8F3E38; // stronger for buttons/links
 
-  #footer a {
+  #footer a,
+  .form-check-label a {
     color: var(--brand-700);
     font-weight: 650;
     text-decoration: none;
@@ -34,7 +35,8 @@ $info:       #4c6ef5;
   --brand-400: #d78c87; // works fine on dark bg
   --brand-600: #B25B54; // darker hover state
 
-  #footer a {
+  #footer a,
+  .form-check-label a {
     color: var(--brand-400);
     font-weight: 650;
     text-decoration: none;
