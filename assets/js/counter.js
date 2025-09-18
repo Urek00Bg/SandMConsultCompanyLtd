@@ -3,7 +3,7 @@ function startCounter(el) {
   el.dataset.animated = "true";
 
   const target = Number(el.dataset.target || 0);
-  const duration = Number(el.dataset.duration || 3000);
+  const duration = Number(el.dataset.duration || 2000);
   const start = performance.now();
 
   function tick(now) {

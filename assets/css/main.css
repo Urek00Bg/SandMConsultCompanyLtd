@@ -32,8 +32,9 @@
 
 /* Dark/Light toggle button */
 #theme-toggle {
-  color: var(--bs-body-color);
-  background-color: transparent;
+  color: black !important;
+  background-color: #d78c87 !important;
+  font-weight: 650;
   border: 1px solid var(--bs-body-color);
   transition: all 0.3s ease;
 }
@@ -41,9 +42,8 @@
 #theme-toggle:hover {
   color: var(--bs-body-color);
   border-color: var(--bs-body-color);
-  font-weight: 700;
   background-color: transparent;
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 #theme-toggle i {
